@@ -1,0 +1,10 @@
+{
+  "private": true,
+  "packageManager": "pnpm@7.22.0",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "pnpm run -r --filter=!docs build"
+  }
+}
