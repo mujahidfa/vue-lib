@@ -3,18 +3,21 @@
   "version": "0.1.0",
   "description": "This is the best Vue library ever!",
   "type": "module",
-  "main": "./dist/vue-lib.umd.cjs",
-  "module": "./dist/vue-lib.js",
+  "main": "./dist/index.umd.cjs",
+  "module": "./dist/index.js",
   "types": "./dist/types/index.d.ts",
+  "typings": "./dist/types/index.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/vue-lib.js",
-      "require": "./dist/vue-lib.umd.cjs",
-      "types": "./dist/types/index.d.ts"
-    }
+      "require": "./dist/index.umd.cjs",
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./index.css": "./dist/index.css"
   },
   "files": [
-    "dist"
+    "./dist",
+    "./LICENSE"
   ],
   "license": "MIT",
   "author": "Mujahid Anuar (https://github.com/mujahidfa)",
@@ -28,12 +31,11 @@
   },
   "keywords": [],
   "scripts": {
-    "dev": "vite",
-    "build": "run-p type-check build-only type-gen",
-    "preview": "vite preview",
+    "build": "run-p format lint && run-p type-check build-only type-gen",
     "build-only": "rimraf dist && vite build",
     "type-check": "vue-tsc --noEmit",
     "type-gen": "vue-tsc --declaration  --emitDeclarationOnly",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,css,md,vue}\" --ignore-path .gitignore",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore"
   },
   "devDependencies": {
