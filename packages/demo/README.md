@@ -1,6 +1,6 @@
 # demo
 
-This template should help get you started developing with Vue 3 in Vite.
+This is a demo project to demonstrate the usage of `vue-lib`.
 
 ## Recommended IDE Setup
 
