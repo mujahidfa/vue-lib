@@ -2,52 +2,44 @@
 
 A monorepo starter for Vue libraries. Written in TypeScript and supports TSX.
 
+## Features
+
+1. Vite
+2. TypeScript
+3. Supports both Vue SFCs and Vue TSX components
+4. pnpm
+5. ESLint and Prettier
+6. Vitest and Playwright for testing (soon)
+7. GitHub Actions for CI and release (soon)
+
 ## Installation
 
-Install the package:
+1. Download the repo. You can either:
 
-```sh
-npm install vue-lib
-# or
-pnpm install vue-lib
-#or
-yarn add vue-lib
-```
+   a. Clone the repo without the git history:
 
-Import the components directly:
+   ```sh
+   pnpx degit https://github.com/mujahidfa/vue-lib
+   ```
 
-<!-- prettier-ignore -->
-```vue
-<script setup lang="ts">
-import { CoolCounter, CoolButton } from "vue-lib";
-</script>
+   b. Or, create a repo based on this template via the [GitHub template generator](https://github.com/mujahidfa/vue-lib/generate).
 
-<template>
-  <CoolCounter :startingCount="10" />
-  <CoolButton backgroundColor="blue">
-    Hello, I'm a cool button!
-  </CoolButton>
-</template>
+2. Install packages.
 
-<style>
-@import "vue-lib/index.css";
-</style>
-```
+   ```sh
+   pnpm install
+   ```
 
-## Development
+3. Build the library.
 
-```sh
-pnpm install
-cd vue-lib/
-pnpm build
-cd ../demo/
-pnpm dev
-```
+   ```sh
+   cd vue-lib/
+   pnpm build
+   ```
 
-### Credits
+4. Run the demo app to see the library in action.
 
-MIT License
-
-Copyright (c) 2023 Mujahid Anuar <<https://github.com/mujahidfa>>
-
-Credits to this person for inspiring this library!
+   ```sh
+   cd ../demo/
+   pnpm dev
+   ```

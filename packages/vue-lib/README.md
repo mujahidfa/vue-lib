@@ -10,7 +10,7 @@ Install the package:
 npm install vue-lib
 # or
 pnpm install vue-lib
-#or
+# or
 yarn add vue-lib
 ```
 
