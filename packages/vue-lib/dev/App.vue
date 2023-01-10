@@ -15,7 +15,3 @@ const bgColor: CoolButtonColor = "blue";
     Hello, I'm a cool button!
   </CoolButton>
 </template>
-
-<style>
-@import "vue-lib/index.css";
-</style>

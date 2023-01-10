@@ -38,7 +38,10 @@ import { CoolCounter, CoolButton } from "vue-lib";
 
 ```sh
 pnpm install
-cd vue-lib/
+
+cd packages/vue-lib/
+pnpm dev
+
 pnpm build
 cd ../demo/
 pnpm dev

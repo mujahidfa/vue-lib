@@ -30,16 +30,18 @@ A monorepo starter for Vue libraries. Written in TypeScript and supports TSX.
    pnpm install
    ```
 
-3. Build the library.
+3. Run the dev server to open up the playground.
 
    ```sh
-   cd vue-lib/
-   pnpm build
+   cd packages/vue-lib/
+   pnpm dev
    ```
 
-4. Run the demo app to see the library in action.
+4. Build the library and run the demo app to see the library in action.
 
    ```sh
+   cd packages/vue-lib/
+   pnpm build
    cd ../demo/
    pnpm dev
    ```
