@@ -47,7 +47,7 @@ cd ../demo/
 pnpm dev
 ```
 
-### Credits
+## Credits
 
 MIT License
 
