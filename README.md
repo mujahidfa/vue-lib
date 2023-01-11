@@ -1,6 +1,6 @@
 # vue-lib
 
-A monorepo starter for Vue libraries. Written in TypeScript and supports TSX.
+A monorepo starter for building Vue libraries. Written in TypeScript and supports TSX.
 
 ## Features
 
